@@ -1,11 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin:0;
     padding:0;
-    box-sizing: border-box;
 }
 
 .row-container {
     height:25vh;
     width:100vw;
     background-color: blue;
+    display:flex;
+    border:1px solid black;
+}
+
+.block {
+    height:100%;
+    width:25%;
+    border:1px solid black;
+    /* background-color: black; */
 }
