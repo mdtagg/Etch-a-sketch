@@ -3,3 +3,5 @@ manipulation methods.
 
 1. Add a container div within the main container div 
 that will house 4 blocks on each row. 
+
+2. Programmatically add 4 row containers to the DOM. 

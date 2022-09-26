@@ -1,5 +1,11 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 .row-container {
-    height:20vh;
-    width:20vh;
+    height:25vh;
+    width:100vw;
     background-color: blue;
 }
