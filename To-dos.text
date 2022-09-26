@@ -5,3 +5,5 @@ manipulation methods.
 that will house 4 blocks on each row. 
 
 2. Programmatically add 4 row containers to the DOM. 
+
+3. Programmatically add blocks to the rows. 
