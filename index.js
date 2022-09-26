@@ -2,7 +2,7 @@
 const parentContainer = document.querySelector('.container')
 
 function rowCreator() {
-    const rows = 4;
+    const rows = 16;
     
     for(let i = 0;i < rows;i++) {
         const row = document.createElement('div');
@@ -17,7 +17,7 @@ rowCreator()
 
 function blockCreator() {
 
-    const blocks = 4;
+    const blocks = 16;
     const rowBlock = document.querySelectorAll('.row-container')
 
     for(let j = 0;j < blocks;j++) {

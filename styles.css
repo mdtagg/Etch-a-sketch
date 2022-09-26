@@ -5,11 +5,17 @@
 body {
     margin:0;
     padding:0;
+    
+}
+
+.container {
+    height:100vh;
+    width:100vw;
 }
 
 .row-container {
-    height:25vh;
-    width:100vw;
+    height:6.25vh;
+    width:100%;
     background-color: blue;
     display:flex;
     border:1px solid black;
