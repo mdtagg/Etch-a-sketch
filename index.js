@@ -1,4 +1,7 @@
 
+
+
+
 const parentContainer = document.querySelector('.container')
 
 function rowCreator(gridSize) {
@@ -34,6 +37,15 @@ function changeColor(e) {
     e.target.style.background = 'black'
 }
 
-// const changeColor = document.querySelector(block)
-// changeColor.addEventListener('onmouseover', () => {})
+const toggles = document.querySelector('.toggles')
+
+const toggleOne = document.createElement('div')
+const toggleTwo = document.createElement('div')
+toggleOne.classList.add('toggle-one')
+toggleTwo.classList.add('toggle-two')
+
+toggles.appendChild(toggleOne)
+toggles.appendChild(toggleTwo)
+
+
 
