@@ -13,7 +13,7 @@ function rowCreator(gridSize) {
     blockCreator(gridSize)
 }
 
-rowCreator(64)
+rowCreator(80)
 
 function blockCreator(gridSize) {
 
@@ -24,8 +24,16 @@ function blockCreator(gridSize) {
         for(let i = 0;i < blocks;i++) {
             const block = document.createElement('div')
             block.classList.add('block')
+            block.addEventListener('mouseenter', changeColor)
             rowBlock[i].appendChild(block)
         }
     }
 }
+
+function changeColor(e) {
+    e.target.style.background = 'black'
+}
+
+// const changeColor = document.querySelector(block)
+// changeColor.addEventListener('onmouseover', () => {})
 
