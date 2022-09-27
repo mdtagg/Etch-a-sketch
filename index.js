@@ -3,7 +3,7 @@ const header = document.querySelector('.header')
 
 const title = document.createElement('div')
 title.classList.add('title')
-title.textContent = 'Mike Ts Magic Etch-A-Sketch Screen'
+title.textContent = 'Mike T\'s Magic Etch-A-Sketch Screen'
 
 header.appendChild(title)
 
@@ -46,12 +46,21 @@ function changeColor(e) {
 const toggles = document.querySelector('.toggles')
 
 const toggleOne = document.createElement('div')
+const shakeButton = document.createElement('button')
 const toggleTwo = document.createElement('div')
+
 toggleOne.classList.add('toggle-one')
+
+shakeButton.classList.add('shake-button')
+shakeButton.textContent = 'Shake It Up!'
+
 toggleTwo.classList.add('toggle-two')
 
 toggles.appendChild(toggleOne)
+toggles.appendChild(shakeButton)
 toggles.appendChild(toggleTwo)
+
+
 
 
 

@@ -14,7 +14,7 @@ body {
 }
 
 .title {
-    height:20vh;
+    height:15vh;
     width:100%;
     width:50vw;
     display:flex;
@@ -54,16 +54,17 @@ body {
 
 .toggles {
     display:flex;
-    height:20vh;
+    height:25vh;
     width:100%;
     /* border:1px solid black; */
+    align-items: center;
     justify-content: space-between;
     /* border:1px solid black; */
 }
 
 .toggle-one {
     /* height:20vh; */
-    height:90%;
+    height:80%;
     width:20vh;
     margin-left:60px;
     border:1px solid black;
@@ -73,11 +74,22 @@ body {
 }
 
 .toggle-two {
-    height:90%;
+    height:80%;
     width:20vh;
     border:1px solid black;
     margin-right:60px;
     background:white;
     border-radius:100%;
     /* margin-top:20px; */
+}
+
+.shake-button {
+    height:15vh;
+    width:30vw;
+    background: linear-gradient(45deg,red,orange,yellow,green,blue,indigo,violet);
+    color:gold;
+    font-size:x-large;
+    font-style:italic;
+    cursor: pointer;
+    border:1px solid black;
 }
