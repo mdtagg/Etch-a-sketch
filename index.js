@@ -1,5 +1,11 @@
 
+const header = document.querySelector('.header')
 
+const title = document.createElement('div')
+title.classList.add('title')
+title.textContent = 'Mike Ts Magic Etch-A-Sketch Screen'
+
+header.appendChild(title)
 
 
 const parentContainer = document.querySelector('.container')
