@@ -1,8 +1,8 @@
 
 const parentContainer = document.querySelector('.container')
 
-function rowCreator() {
-    const rows = 16;
+function rowCreator(gridSize) {
+    const rows = gridSize;
     
     for(let i = 0;i < rows;i++) {
         const row = document.createElement('div');
@@ -10,14 +10,14 @@ function rowCreator() {
         parentContainer.appendChild(row)
     }
 
-    blockCreator()
+    blockCreator(gridSize)
 }
 
-rowCreator()
+rowCreator(64)
 
-function blockCreator() {
+function blockCreator(gridSize) {
 
-    const blocks = 16;
+    const blocks = gridSize;
     const rowBlock = document.querySelectorAll('.row-container')
 
     for(let j = 0;j < blocks;j++) {
@@ -28,10 +28,4 @@ function blockCreator() {
         }
     }
 }
-
-// const firstDiv = document.createElement('div')
-// firstDiv.classList.add('row-container')
-
-// const parentContainer = document.querySelector('.container')
-// parentContainer.appendChild(firstDiv)
 
