@@ -84,12 +84,14 @@ body {
 }
 
 .shake-button {
-    height:15vh;
-    width:30vw;
-    background: linear-gradient(45deg,red,orange,yellow,green,blue,indigo,violet);
+    height:5vh;
+    width:10vw;
+    background-color:transparent;
+    /* background: linear-gradient(45deg,red,orange,yellow,green,blue,indigo,violet); */
+    /* background:blue; */
     color:gold;
     font-size:x-large;
     font-style:italic;
     cursor: pointer;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
