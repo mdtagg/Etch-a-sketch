@@ -14,6 +14,10 @@ const parentContainer = document.querySelector('.container')
 
 
 function rowCreator(gridSize) {
+    if(gridSize > 100) {
+        alert('Error: Screen Size Out Of Range')
+        return
+    }
     const rows = gridSize;
 
     
