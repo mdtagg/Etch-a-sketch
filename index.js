@@ -1,4 +1,6 @@
 
+
+// title section 
 const header = document.querySelector('.header')
 
 const title = document.createElement('div')
@@ -7,7 +9,7 @@ title.textContent = 'Mike T\'s Magic Etch-A-Sketch Screen'
 
 header.appendChild(title)
 
-
+// body section, includes etch a sketch screen 
 const parentContainer = document.querySelector('.container')
 
 
@@ -59,6 +61,8 @@ function restart() {
     rowCreator(screenSize)
     
 }
+
+//bottom section, includes etch a sketch toggles and restart button
 
 const toggles = document.querySelector('.toggles')
 
