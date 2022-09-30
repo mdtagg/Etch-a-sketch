@@ -10,16 +10,19 @@ header.appendChild(title)
 
 const parentContainer = document.querySelector('.container')
 
+
 function rowCreator(gridSize) {
     const rows = gridSize;
+
     
     for(let i = 0;i < rows;i++) {
         const row = document.createElement('div');
-        row.classList.add('row-container')
+        row.classList.add('row')
         parentContainer.appendChild(row)
     }
 
     blockCreator(gridSize)
+
 }
 
 rowCreator(80)
@@ -27,7 +30,7 @@ rowCreator(80)
 function blockCreator(gridSize) {
 
     const blocks = gridSize;
-    const rowBlock = document.querySelectorAll('.row-container')
+    const rowBlock = document.querySelectorAll('.row')
 
     for(let j = 0;j < blocks;j++) {
         for(let i = 0;i < blocks;i++) {
@@ -43,6 +46,20 @@ function changeColor(e) {
     e.target.style.background = 'black'
 }
 
+
+function restart() {
+
+    const rowRemoval = document.querySelectorAll('.row')
+
+    for(let i = 0;i < rowRemoval.length;i++) {
+        parentContainer.removeChild(rowRemoval[i])
+    }
+
+    let screenSize = parseInt(prompt('How big do you want the screen? Choose a number between 1 and 100'))
+    rowCreator(screenSize)
+    
+}
+
 const toggles = document.querySelector('.toggles')
 
 const toggleOne = document.createElement('div')
@@ -53,6 +70,7 @@ toggleOne.classList.add('toggle-one')
 
 shakeButton.classList.add('shake-button')
 shakeButton.textContent = 'Shake It Up!'
+shakeButton.addEventListener('click', restart)
 
 toggleTwo.classList.add('toggle-two')
 
